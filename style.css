@@ -1,0 +1,107 @@
+body {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+.soil {
+    position: absolute;
+    width:100vw;
+    height:110vh;
+    z-index: 0;
+}
+
+.title {
+    z-index: 2;
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 20px;
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.title:hover {
+    font-size:200px;
+    color:green;
+    transition: color 500ms, font-size 5s;
+}
+
+.green-box {
+    position:absolute;
+    top:400px;
+    left:300px;
+    background:green;
+    width:200px;
+    height:200px;
+    transition:all 500ms;
+}
+
+.rock{
+    position: absolute;
+    top: 80px;
+    left: 1150px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.rock:hover{
+    content: url(images/therockhover.png);
+}
+
+.dialogue{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 5px solid black;
+
+    background: lightgrey;
+    padding: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.dialogue:hover{
+    border: 5px solid white;
+}
+
+.seed{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    height: 100px;
+    cursor: pointer;
+    transform: 0;
+    z-index: 2;
+}
+
+.seed:hover{
+    content: url(images/venasaur.png);
+    height: 300px;
+    transform: translate(-35%, -30%);
+}
+
+.worm{
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    height: 75px;
+    transition: all 5s ease;
+    z-index: 1;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
